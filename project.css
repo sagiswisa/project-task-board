@@ -1,0 +1,174 @@
+body { 
+    background-color: lightblue;
+}
+
+h1 { 
+    text-align: center;
+    font-family: "Bungee Tint", sans-serif;
+    font-size: 50px;
+}
+      
+#add-task {
+    background-image: url("https://img.freepik.com/free-vector/hand-drawn-blue-lined-paper-background_23-2151105453.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 1.2rem;
+    padding: 30px;
+    padding-left: 60px;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: #a34caf;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;    
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+label {
+    font-family: "Handlee", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.due-container {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    background: rgba(255, 255, 255, 0.8); 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 1rem;
+    font-family: "Handlee", cursive; 
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 5px;     
+}
+
+.buttons-container button {
+    border: none;
+    background: transparent;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    FONT-FAMILY: "Handlee", cursive;
+    text-shadow: 0 0 5px rgba(170, 26, 26, 0.8),
+}
+
+.buttons-container button:hover {
+    text-shadow: 0 2px 10px rgba(239, 0, 0, 0.581);
+    transition: 0.3s ease;
+
+}
+
+#taskList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px;
+    border-top: 2px dashed #ccc;
+    position: relative;
+}
+    
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+            
+.note {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #fff8dc;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 190px;
+    font-family: "Handlee", cursive;
+    transition: transform 0.3s ease;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    max-height: 300px;
+    overflow: auto;
+    animation: fadein 0.5s ease-in;
+        
+}
+    
+.note:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+#note-task {
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative;
+    font-weight: normal;
+}
+
+.task-title {
+    position: inline;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.task-info{
+    font-size: 0.9rem;
+}
+
+#bottom-date {
+    font-size: 14px;
+    margin-top: 30px;
+    position: relative;
+    border-top: 1.5px dashed #ccc;
+    line-height: 0.5;
+}
+
+.note-time {
+    font-size: 12px;
+}
+
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 10;}
+    
+.note:hover .delete-button {
+    display: block; 
+}
+    
+#bottom-date {
+    font-size: 14px;
+    margin-top: 30px;
+    position: relative;
+    border-top: 1.5px dashed #ccc;
+    line-height: 0.5;
+}
